@@ -1,0 +1,96 @@
+@import 'config';
+@import 'utilities';
+@import 'general_style';
+
+
+// Header 
+#header-home {
+    #navbar {
+        background: $light-color;
+        overflow: hidden;
+        padding: 2rem 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    
+        .container-large {
+            display: flex;
+            justify-content: space-between;
+    
+            #logo {
+                height: 3.3rem;
+                width: 3.3rem;
+            }
+    
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                li {
+                    padding: 0 3rem;
+    
+                    a {
+                        font-weight: 500;
+                        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    
+                        &:hover {
+                            color: $hover-color;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+    .header-content {
+        height: 60rem;
+        background: $medium-color;
+        background: $bg-img no-repeat center center/cover;
+
+        .container {
+            padding-top: 9rem;
+
+            .top-container {
+                padding-top: 3rem;
+
+                .promo {
+                    color: $dark-color;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    padding: 2rem 0;
+
+                    a {
+                        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+                        i {
+                            color: #fff;
+                            background: $dark-color;
+                            border-radius: 50%;
+                            padding: 1.5rem;
+                            cursor: pointer;
+                            display: inline;
+    
+                        }
+
+                        &:hover {
+                            transform: scale(1.2);
+                            opacity: 0.9;
+                        }
+                    }
+    
+    
+                    p {
+                        padding-left: 1rem;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}
+// Navbar

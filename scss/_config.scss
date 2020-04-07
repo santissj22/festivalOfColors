@@ -1,0 +1,20 @@
+// Variables
+$website-width: 1280px;
+$main-color: #341d74;
+$secondary-color: #655495;
+$light-color: #f5f7fd;
+$medium-color: #ccc;
+$hover-color: #f38881;
+$dark-color: #17161a;
+$bg-color: rgba(52, 29, 116, 0.95);
+$bg-img: url('../img/header-image.jpg');
+
+
+// Set Text Color
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return #000;
+    }   @else {
+        @return #fff;
+    }
+} 
