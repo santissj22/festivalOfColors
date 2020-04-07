@@ -133,24 +133,27 @@ img {
       width: 3.3rem; }
     #header-home #navbar .container-large ul {
       display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      #header-home #navbar .container-large ul li {
-        padding: 0 3rem; }
-        #header-home #navbar .container-large ul li a {
-          font-weight: 500;
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-          #header-home #navbar .container-large ul li a:hover {
-            color: #f38881; }
+      justify-content: space-evenly;
+      align-items: center;
+      width: 60%;
+      min-width: 500px; }
+      #header-home #navbar .container-large ul li a {
+        font-weight: 500;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        #header-home #navbar .container-large ul li a:hover {
+          color: #f38881; }
 
 #header-home .header-content {
   height: 60rem;
   background: #ccc;
   background: url("../img/header-image.jpg") no-repeat center center/cover; }
   #header-home .header-content .container {
-    padding-top: 9rem; }
+    padding-top: 9rem;
+    height: 100%; }
     #header-home .header-content .container .top-container {
-      padding-top: 3rem; }
+      padding-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
       #header-home .header-content .container .top-container .promo {
         color: #17161a;
         display: flex;
@@ -172,3 +175,26 @@ img {
         #header-home .header-content .container .top-container .promo p {
           padding-left: 1rem;
           font-weight: 700; }
+      #header-home .header-content .container .top-container .topRight-content {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        color: #17161a; }
+        #header-home .header-content .container .top-container .topRight-content .title {
+          width: 60%;
+          border-top: 2px solid #17161a;
+          padding-top: 2rem;
+          margin-right: 3rem; }
+          #header-home .header-content .container .top-container .topRight-content .title h1 {
+            font-size: 4rem;
+            line-height: 3.8rem; }
+        #header-home .header-content .container .top-container .topRight-content .date {
+          width: 20%;
+          background: rgba(255, 255, 255, 0.5);
+          padding: 1rem;
+          font-weight: 600; }
+    #header-home .header-content .container .bottom-container {
+      width: 50%;
+      position: absolute;
+      bottom: 0;
+      background: #341d74; }

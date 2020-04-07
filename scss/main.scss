@@ -24,18 +24,20 @@
     
             ul {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 align-items: center;
+                width: 60%;
+                min-width: 500px;
     
                 li {
-                    padding: 0 3rem;
+                    // padding: 0 1rem;
     
                     a {
                         font-weight: 500;
                         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     
                         &:hover {
-                            color: $hover-color;
+                            color: $hover-color; 
                         }
                     }
                 }
@@ -50,9 +52,12 @@
 
         .container {
             padding-top: 9rem;
+            height: 100%;
 
             .top-container {
                 padding-top: 3rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
 
                 .promo {
                     color: $dark-color;
@@ -87,6 +92,43 @@
                     }
                 }
 
+                .topRight-content {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    color: $dark-color;
+                    
+                    .title {
+                        width: 60%;
+                        border-top: 2px solid $dark-color;
+                        padding-top: 2rem;
+                        margin-right: 3rem;
+                        
+                        h1 {
+                            font-size: 4rem;
+                            line-height: 3.8rem;
+                        }
+                    }
+
+                    .date {
+                        width: 20%;
+                        background: rgba(255,255,255,0.5);
+                        padding: 1rem;
+                        font-weight: 600;
+                    }
+                }
+
+
+            }
+
+            .bottom-container {
+                width: 50%;
+                position: absolute;
+                bottom: 0;
+                background: $main-color;
+                .box {
+
+                }
             }
 
         }
