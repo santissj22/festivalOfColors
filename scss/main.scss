@@ -12,6 +12,7 @@
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 200;
     
         .container-large {
             display: flex;
@@ -46,13 +47,18 @@
     } 
 
     .header-content {
-        height: 60rem;
+        height: 57rem;
         background: $medium-color;
         background: $bg-img no-repeat center center/cover;
+        overflow: hidden;
 
         .container {
             padding-top: 9rem;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
 
             .top-container {
                 padding-top: 3rem;
@@ -107,6 +113,7 @@
                         h1 {
                             font-size: 4rem;
                             line-height: 3.8rem;
+                            padding-top: 1.5rem;
                         }
                     }
 
@@ -122,12 +129,14 @@
             }
 
             .bottom-container {
-                width: 50%;
-                position: absolute;
-                bottom: 0;
-                background: $main-color;
+                width: 100%;
+                padding: 2rem;
+                padding-bottom: 12rem;
+                // border: 3px solid red;
+                width: 36%;
+                background: $bg-color;
+                color: #fff;
                 .box {
-
                 }
             }
 
@@ -135,4 +144,109 @@
     }
 
 }
-// Navbar
+
+
+// Section A: AS IT WAS BEFORE
+#home {
+    &-a {
+        width: 100%;
+        min-height: 35rem;
+        background: url(../img/section1Background.jpg) no-repeat 50% 50%/cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .text {
+            max-width: 35rem;
+            margin: 0 auto;
+
+            h2 {
+                color: $main-color;
+                font-size: 3.1rem;
+                padding-bottom: 1rem;
+            }
+
+            p {
+                color: $secondary-color;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(255,255,255,0.6);
+            z-index: 1;
+        }
+        & > * {
+            z-index: 100;
+        }
+
+        .slideshow {
+            width: 100%;
+            padding: 0 3rem;
+            margin: 0 auto;
+            height: 20rem;
+            margin-top: 2rem;
+            // background: orange;
+        }
+          
+          .gallery-cell {
+            width: 500px;
+            height: 300px;
+            margin-right: 2rem;
+            background: #8C8;
+            counter-increment: gallery-cell;
+            border-radius: 6px;
+          }
+          
+
+        
+          .flickity-prev-next-button {
+            top: 130%;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            /* vertically center */
+            transform: translateY(-50%);
+          }
+        
+          .flickity-button {
+              position: relative;
+              margin: 1rem;
+              margin-top: 4rem;
+            background: rgba(23, 22, 26, 0.3);
+            color: #fff;
+          }
+        
+          .flickity-button:first-of-type {
+            margin-left: 17.5%;
+          }
+
+          .flickity-page-dots {
+              display: none;
+          }
+
+
+          .pic-1 {background: url(/dist/img/section1image1.jpg) no-repeat center center/cover;}
+          .pic-2 {background: url(/dist/img/section1image2.jpg) no-repeat center center/cover;}
+          .pic-3 {background: url(/dist/img/section1image3.jpg) no-repeat center center/cover;}
+          .pic-4 {background: url(/dist/img/section1image4.jpg) no-repeat center center/cover;}
+          .pic-5 {background: url(/dist/img/section1image5.jpg) no-repeat center center/cover;}
+          .pic-6 {background: url(/dist/img/section1image6.jpg) no-repeat center center/cover;}
+          .pic-7 {background: url(/dist/img/section1image7.jpg) no-repeat center center/cover;}
+          .pic-8 {background: url(/dist/img/section1image8.jpg) no-repeat center center/cover;}
+    }
+}
+
+.next-sect {
+    height: 40rem;
+    background: pink;
+}

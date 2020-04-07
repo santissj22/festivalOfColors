@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9808c8520d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/flickity-docs.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Festival Of Colors</title>
 </head>
@@ -15,7 +16,7 @@
                 <img src="img/logo-festivale.png" alt="Festival of Colors" id="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Media</a></li>
+                    <li><a href="#home-a">Media</a></li>
                     <li><a href="#">Tickets</a></li>
                     <li><a href="#">Citites</a></li>
                     <li><a href="#">FAQ</a></li>
@@ -43,6 +44,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="bottom-container">
                     <div class="box">
                         <h3>About</h3>
@@ -53,6 +55,29 @@
         </div>
 
     </header>
+
+    <!-- Section A: As it was before -->
+    <section id="home-a" class="py-5">
+        <div class="text text-center">
+            <h2>As it was before</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quia sequi omnis error, porro obcaecati <span>aut temporibus voluptates.</span> Qui, rem!</p>
+        </div>
+        <div class="slideshow">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell pic-1"></div>
+                <div class="gallery-cell pic-2"></div>
+                <div class="gallery-cell pic-3"></div>
+                <div class="gallery-cell pic-4"></div>
+                <div class="gallery-cell pic-5"></div>
+                <div class="gallery-cell pic-6"></div>
+                <div class="gallery-cell pic-7"></div>
+                <div class="gallery-cell pic-8"></div>
+              </div>
+        </div>
+    </section>
+
+    <!-- <div class="next-sect"></div> -->
     
+    <script src="js/flickity-docs.min.js"></script>
 </body>
 </html>

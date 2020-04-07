@@ -69,6 +69,9 @@ input[class^='btn-']:hover {
 .py-4 {
   padding: 4rem 0; }
 
+.py-5 {
+  padding: 5rem 0; }
+
 .my-1 {
   margin: 1rem 0; }
 
@@ -124,7 +127,8 @@ img {
   padding: 2rem 0;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 200; }
   #header-home #navbar .container-large {
     display: flex;
     justify-content: space-between; }
@@ -144,12 +148,16 @@ img {
           color: #f38881; }
 
 #header-home .header-content {
-  height: 60rem;
+  height: 57rem;
   background: #ccc;
-  background: url("../img/header-image.jpg") no-repeat center center/cover; }
+  background: url("../img/header-image.jpg") no-repeat center center/cover;
+  overflow: hidden; }
   #header-home .header-content .container {
     padding-top: 9rem;
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
     #header-home .header-content .container .top-container {
       padding-top: 3rem;
       display: grid;
@@ -187,14 +195,97 @@ img {
           margin-right: 3rem; }
           #header-home .header-content .container .top-container .topRight-content .title h1 {
             font-size: 4rem;
-            line-height: 3.8rem; }
+            line-height: 3.8rem;
+            padding-top: 1.5rem; }
         #header-home .header-content .container .top-container .topRight-content .date {
           width: 20%;
           background: rgba(255, 255, 255, 0.5);
           padding: 1rem;
           font-weight: 600; }
     #header-home .header-content .container .bottom-container {
-      width: 50%;
-      position: absolute;
-      bottom: 0;
-      background: #341d74; }
+      width: 100%;
+      padding: 2rem;
+      padding-bottom: 12rem;
+      width: 36%;
+      background: rgba(52, 29, 116, 0.95);
+      color: #fff; }
+
+#home-a {
+  width: 100%;
+  min-height: 35rem;
+  background: url(../img/section1Background.jpg) no-repeat 50% 50%/cover;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  #home-a .text {
+    max-width: 35rem;
+    margin: 0 auto; }
+    #home-a .text h2 {
+      color: #341d74;
+      font-size: 3.1rem;
+      padding-bottom: 1rem; }
+    #home-a .text p {
+      color: #655495; }
+      #home-a .text p span {
+        font-weight: 700; }
+  #home-a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1; }
+  #home-a > * {
+    z-index: 100; }
+  #home-a .slideshow {
+    width: 100%;
+    padding: 0 3rem;
+    margin: 0 auto;
+    height: 20rem;
+    margin-top: 2rem; }
+  #home-a .gallery-cell {
+    width: 500px;
+    height: 300px;
+    margin-right: 2rem;
+    background: #8C8;
+    counter-increment: gallery-cell;
+    border-radius: 6px; }
+  #home-a .flickity-prev-next-button {
+    top: 130%;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    /* vertically center */
+    transform: translateY(-50%); }
+  #home-a .flickity-button {
+    position: relative;
+    margin: 1rem;
+    margin-top: 4rem;
+    background: rgba(23, 22, 26, 0.3);
+    color: #fff; }
+  #home-a .flickity-button:first-of-type {
+    margin-left: 17.5%; }
+  #home-a .flickity-page-dots {
+    display: none; }
+  #home-a .pic-1 {
+    background: url(/dist/img/section1image1.jpg) no-repeat center center/cover; }
+  #home-a .pic-2 {
+    background: url(/dist/img/section1image2.jpg) no-repeat center center/cover; }
+  #home-a .pic-3 {
+    background: url(/dist/img/section1image3.jpg) no-repeat center center/cover; }
+  #home-a .pic-4 {
+    background: url(/dist/img/section1image4.jpg) no-repeat center center/cover; }
+  #home-a .pic-5 {
+    background: url(/dist/img/section1image5.jpg) no-repeat center center/cover; }
+  #home-a .pic-6 {
+    background: url(/dist/img/section1image6.jpg) no-repeat center center/cover; }
+  #home-a .pic-7 {
+    background: url(/dist/img/section1image7.jpg) no-repeat center center/cover; }
+  #home-a .pic-8 {
+    background: url(/dist/img/section1image8.jpg) no-repeat center center/cover; }
+
+.next-sect {
+  height: 40rem;
+  background: pink; }
