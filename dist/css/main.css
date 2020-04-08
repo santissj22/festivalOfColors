@@ -361,7 +361,7 @@ img {
 
 #home-c {
   height: 46rem;
-  background: #f4f4f4;
+  background: #f5f7fd;
   position: relative; }
   #home-c #map {
     width: 100%;
@@ -380,6 +380,36 @@ img {
       font-size: 1.6rem; }
     #home-c .address-content div {
       padding-bottom: 1.3rem; }
+
+#home-d {
+  height: 23rem;
+  background-color: #f5f7fd; }
+  #home-d .questions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    #home-d .questions .left {
+      padding-right: 14rem; }
+      #home-d .questions .left p {
+        color: #655495;
+        font-weight: 600;
+        opacity: 0.8; }
+      #home-d .questions .left h2 {
+        font-size: 2.4rem;
+        color: #341d74; }
+    #home-d .questions .right .collapsible {
+      color: #341d74;
+      font-weight: 700;
+      padding-bottom: 1rem;
+      cursor: pointer;
+      max-height: 0;
+      transition: max-height 0.2s ease-out; }
+      #home-d .questions .right .collapsible i {
+        padding-right: 1rem; }
+    #home-d .questions .right .question-bottom {
+      color: #655495;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out; }
 
 .next-sect {
   height: 70rem;

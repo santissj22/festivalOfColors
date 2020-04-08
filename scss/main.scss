@@ -363,7 +363,7 @@
 
     &-c {
         height: 46rem;
-        background: #f4f4f4;
+        background: $light-color;
         position: relative;
 
         #map {
@@ -388,6 +388,55 @@
 
             div {
                 padding-bottom: 1.3rem;
+            }
+        }
+    }
+
+    &-d {
+        height: 23rem;
+        background-color: $light-color;
+
+        .questions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .left {
+
+                padding-right: 14rem;
+                
+                p {
+                    color: $secondary-color;
+                    font-weight: 600;
+                    opacity: 0.8;
+                }
+
+                h2 {
+                    font-size: 2.4rem;
+                    color: $main-color;
+                }
+            }
+
+            .right {
+                .collapsible {
+                    color: $main-color;
+                    font-weight: 700;
+                    padding-bottom: 1rem;
+                    cursor: pointer;
+                    max-height: 0;
+                    transition: max-height 0.2s ease-out;
+
+                    i {
+                        padding-right: 1rem;
+                    }
+                }
+
+                .question-bottom {
+                    color: $secondary-color;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+
+                }
             }
         }
     }
