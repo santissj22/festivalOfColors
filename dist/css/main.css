@@ -10,6 +10,9 @@
   margin: auto;
   overflow: hidden; }
 
+.bold {
+  font-weight: 700; }
+
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
   padding: 0.8rem 1.5rem;
@@ -355,6 +358,28 @@ img {
           border: 1px solid rgba(52, 29, 116, 0.3);
           border-radius: 50%;
           margin-top: 1rem; }
+
+#home-c {
+  height: 46rem;
+  background: #f4f4f4;
+  position: relative; }
+  #home-c #map {
+    width: 100%;
+    height: 46rem;
+    background-color: grey; }
+  #home-c .address-content {
+    height: 24rem;
+    width: 29rem;
+    background: rgba(52, 29, 116, 0.89);
+    color: #fff;
+    position: absolute;
+    top: 11rem;
+    left: 53%;
+    padding: 2rem 4rem; }
+    #home-c .address-content h4 {
+      font-size: 1.6rem; }
+    #home-c .address-content div {
+      padding-bottom: 1.3rem; }
 
 .next-sect {
   height: 70rem;
