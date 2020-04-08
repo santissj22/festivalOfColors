@@ -1269,7 +1269,7 @@ body {
 }
 
 /* font size on html for rem */
-html { font-size: 17px; }
+/* html { font-size: 17px; } */
 html.export { font-size: 15px; }
 
 a {
@@ -1397,7 +1397,7 @@ tr:nth-child(2) td {
 
 @media screen and ( min-width: 768px ) {
 
-  html { font-size: 19px; }
+  /* html { font-size: 19px; } */
   html.export { font-size: 16px; }
 
   .container {
