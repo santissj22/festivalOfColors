@@ -11,17 +11,19 @@
 </head>
 <body>
     <header id="header-home">
+
         <nav id="navbar">
             <div class="container-large">
                 <img src="img/logo-festivale.png" alt="Festival of Colors" id="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#header-home">Home</a></li>
                     <li><a href="#home-a">Media</a></li>
-                    <li><a href="#">Tickets</a></li>
-                    <li><a href="#">Citites</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Comments</a></li>
-                    <li><a href="#">Sponsorship</a></li>
+                    <li><a href="#home-b">Tickets</a></li>
+                    <li><a href="#home-c">Citites</a></li>
+                    <li><a href="#home-d">FAQ</a></li>
+                    <li><a href="#home-e">Comments</a></li>
+                    <li><a href="#home-f">Sponsorship</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars fa-2x"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -67,7 +69,7 @@
                 <div class="gallery-cell pic-4"></div>
                 <div class="gallery-cell pic-5"></div>
                 <div class="gallery-cell pic-6"></div>
-                <div class="gallery-cell pic-7"></div>
+                <!-- <div class="gallery-cell pic-7"></div> -->
                 <div class="gallery-cell pic-8"></div>
                 <div class="gallery-cell pic-1"></div>
               </div>
@@ -178,37 +180,133 @@
             </div>
         </section>
 
+        <!-- Section E: Testimonials -->
         <section id="home-e">
             <div class="container">
-                <div class="content">
-                    <div class="slideshow">
-                        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                            <div class="gallery-cell">
-                                <h3>Participant</h3>
-                                <q>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quidem maxime dolorum minima, tenetur rem amet optio at necessitatibus officia.</q>
-                            </div>
-                            <div class="gallery-cell"></div>
-                        </div>
-                    </div>
+                <div class="testimonial-content">
+                    <img src="img/section5Participant1.jpg" alt="">
+                    <p class="header">Participant</p>
+                    <q>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore similique assumenda repellat officia nesciunt perferendis ipsum? Illum, maxime.</q>
                 </div>
             </div>
         </section>
 
-        <section id="home-f" class="py-3">
+        <!-- Section F: Time left -->
+        <section id="home-f">
             <div class="container">
                 <div class="video">
                     <iframe width="644" height="362" src="https://www.youtube.com/embed/36YgDDJ7XSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="text">
+                    <div class="counter">
+                        <p><span id="days"></span> :</p>
+                        <p><span id="hours"></span> :</p>
+                        <p><span id="minutes"></span> :</p>
+                        <p><span id="seconds"></span> </p>
+                    </div>
                     <h3>Time Left</h3>
                     <h3>Until Festival</h3>
                 </div>
             </div>
         </section>
 
+        <!-- Section G: Spronsors -->
+        <section id="home-g" class="py-2">
+            <div class="container">
+                <p class="capitalize">sponshorship</p>
+                <h4>Our Sponsors</h4>
+                <div class="sponsor-grid">
+                    <div class="sponsor">
+                        <div class="sponsor-name"><p>Sponsors from Montreal, 2019</p></div>
+                        <div class="sponsor-website"><a href="#">www.mobirise.com</a></div>
+                    </div>
+                    <div class="sponsor">
+                        <div class="sponsor-name"><p>Sponsors from Montreal, 2019</p></div>
+                        <div class="sponsor-website"><a href="#">www.mobirise.com</a></div>
+                    </div>
+                    <div class="sponsor">
+                        <div class="sponsor-name"><p>Sponsors from Montreal, 2019</p></div>
+                        <div class="sponsor-website"><a href="#">www.mobirise.com</a></div>
+                    </div>
+                    <div class="sponsor">
+                        <div class="sponsor-name"><p>Sponsors from Montreal, 2019</p></div>
+                        <div class="sponsor-website"><a href="#">www.mobirise.com</a></div>
+                    </div>
+                    <div class="sponsor">
+                        <div class="sponsor-name"><p>Sponsors from Montreal, 2019</p></div>
+                        <div class="sponsor-website"><a href="#">www.mobirise.com</a></div>
+                    </div>
+                    <div class="sponsor">
+                        <div class="sponsor-name"><p>Sponsors from Montreal, 2019</p></div>
+                        <div class="sponsor-website"><a href="#">www.mobirise.com</a></div>
+                    </div>
+                    <div class="sponsor">
+                        <div class="sponsor-name"><p>Sponsors from Montreal, 2019</p></div>
+                        <div class="sponsor-website"><a href="#">www.mobirise.com</a></div>
+                    </div>
+                    <div class="sponsor">
+                        <div class="sponsor-name"><p>Sponsors from Montreal, 2019</p></div>
+                        <div class="sponsor-website"><a href="#">www.mobirise.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="img">
+                        <img src="img/logo-festivale.png" alt="">
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-card">
+                            <p class="head">Montréal</p>
+                            <p>5505 Boul St-Laurent #2000,</p>
+                            <p>QC H2T 1S6, Canada</p>
+                        </div>
+                        <div class="footer-card">
+                            <p class="head">Partnership</p>
+                            <p>Interested in working with us?</p>
+                            <p class="head">mobirise@company.com</p>
+                        </div>
+                        <div class="footer-card">
+                            <p class="head">Toronto</p>
+                            <p>224 Wallace Ave #200, Toronto,</p>
+                            <p>ON M6H 1V7, Canada</p>
+                        </div>
+                        <div class="footer-card">
+                            <p class="head">Phone</p>
+                            <p>Ph: +(123)456-78-90</p>
+                        </div>
+                    </div>
+                    <div class="subscribe">
+                        <p class="head">Subscribe</p>
+                        <form>
+                            <input type="email" placeholder="Your email">
+                            <button type="submit" class="btn-main">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-legal">
+                    <div class="left">
+                        <p>New Theme ConferenceM4 2020.</p>
+                        <p>Festival of Colors layout.</p>
+                    </div>
+                    <div class="right"><p>&copy; 2020 Mobirise - All Rights Reserved</p></div>
+                </div>
+            </div>
+        </footer>
+
+        <button onclick="scrollToTop()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+
 
     <!-- <div class="next-sect"></div> -->
-    
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi0QIoqgjRmCESQrLGrQYGYu5foOLQEzw&callback=initMap"> -->
     </script>

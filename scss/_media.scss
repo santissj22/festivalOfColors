@@ -1,0 +1,282 @@
+@media(max-width: 800px) {
+    #header-home #navbar .container-large ul li {
+
+
+
+        a.responsive {
+            display: block;
+            a {
+                display: block;
+            }
+        }
+
+
+
+        a {
+            display: none;
+    
+            &.icon {
+                display: block;
+                // float: right;
+                margin-left: 30rem;
+                color: $main-color;
+            }
+        }
+    }
+
+
+
+    #header-home .header-content .container .top-container {
+        grid-template-columns: repeat(1, 1fr);
+
+        .topRight-content {
+            padding-top: 3rem;
+        }
+    }
+
+    .container {
+        padding: 0 3rem;
+    }
+
+    #header-home .header-content .container .bottom-container {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    #home-a .flickity-button:first-of-type {
+        margin-left: 13%;
+    }
+
+    #home-b .ticket-sale {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #home-b .ticket-sale .second-section .button-section {
+        margin-right: 7rem;
+    }
+
+    #home-b .ticket-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #home-b .ticket-info .card {
+        margin: 0;
+    }
+
+    #home-b .ticket-info .card-bottom {
+        justify-content: left;
+
+        p {
+            padding-left: 1rem;
+        }
+    }
+
+    #home-c .address-content {
+        padding-right: 3rem;
+    }
+
+    #home-d .questions {
+        grid-template-columns: repeat(1, 2fr 3fr);        
+        .left {
+            padding-right: 0;
+        }
+    }
+
+    #home-e .container .testimonial-content {
+        width: 100%;
+    }
+
+    #home-f .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #home-f .container .text {
+        order: -1;
+        padding: 5rem 0 1rem 0.5rem;
+    }
+
+    #home-f .container .video,
+    #home-f .container .text .counter {
+        padding-top: 0;
+    }
+
+    #home-g {
+        height: 40rem;
+
+        .sponsor-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    #footer .footer-grid {
+        grid-template-areas: 
+        'logo address address address'
+        'email email email email';
+
+        .img {grid-area: logo;}
+        .footer-info {grid-area: address;}
+        .subscribe {grid-area: email;}
+        gap: 1rem;
+    }
+
+    }
+
+    @media(max-width: 500px) {
+
+        #header-home #navbar .container-large ul li a.icon {
+            margin-right: 12rem;
+            margin-left: 0;
+        }
+
+        .container {
+            padding: 0 1rem;
+        }
+
+        #header-home .header-content .container {
+            padding-top: 6rem;
+
+
+            .top-container .topRight-content {
+                flex-direction: column;
+                padding-top: 1rem;
+
+                .title {
+                    width: 100%;
+                    padding-top: 1rem;
+
+                    h1 {
+                        font-size: 2.3rem;
+                        margin-top: 0;
+                    }
+                }
+
+                .date {
+                    margin: 0 auto;
+                    width: 11rem;
+                }
+            }
+
+            .bottom-container {
+                padding: 1rem;
+                padding-right: 2rem;
+                width: 100%;
+            }
+        }
+        
+        #header-home .header-content {
+            height: 53rem;
+        }
+
+        #home-a .flickity-button {
+            display: none;
+        }
+
+        #myBtn {
+            right: 45%;
+        }
+
+        #home-b .ticket-sale .second-section {
+            flex-direction: column;
+
+            .button-section {
+                padding-top: 2rem;
+            }
+
+        .price-section p.price-info {
+            padding-top: 2rem;
+        }
+
+        }
+
+        #home-c .address-content {
+            left: 6%;
+        }
+
+        #home-d {
+            height: 30rem;
+            padding-top: 2rem;
+
+            .questions {
+                grid-template-columns: repeat(1, 1fr);
+    
+                .left h2 {
+                    font-size: 1.5rem;
+                    padding: 2rem 0.5rem;
+                }
+
+                .right .question  {
+                    margin-bottom: 2.5rem;
+                }
+
+            }
+        }
+
+        #home-f .container .text {
+            padding-top: 3rem;
+
+            h3 {
+                font-size: 1.9rem;
+            }
+        }
+
+        #home-g {
+            height: 55rem;
+
+            .sponsor-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        #footer .footer-grid {
+            display: flex;
+            flex-direction: column;
+
+            .footer-info {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        #footer .footer-grid .subscribe form input {
+            padding: 0;
+
+
+        }
+        
+        
+        #footer .footer-legal {
+            flex-direction: column;
+            align-items: baseline;
+
+            .left {
+                padding-bottom: 1rem;
+            }
+        }
+        
+        
+    }
+
+    @media(max-width: 330px) {
+        #header-home #navbar .container-large ul li a.icon {
+            margin-right: 16rem;
+        }
+
+        #home-c .address-content {
+            padding: 1.9rem;
+        }
+
+        #footer .footer-grid .subscribe form input {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        #footer .footer-grid .subscribe form .btn-main {
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            border-radius: 4px;
+        }
+
+        #home-b .ticket-sale .second-section .button-section {
+            margin-right: 0;
+        }
+    }
